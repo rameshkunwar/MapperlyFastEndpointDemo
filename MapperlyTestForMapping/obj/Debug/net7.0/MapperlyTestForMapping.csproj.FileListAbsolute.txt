@@ -1,0 +1,17 @@
+D:\MapperlyMappingTest\MapperlyTestForMapping\bin\Debug\net7.0\MapperlyTestForMapping.exe
+D:\MapperlyMappingTest\MapperlyTestForMapping\bin\Debug\net7.0\MapperlyTestForMapping.deps.json
+D:\MapperlyMappingTest\MapperlyTestForMapping\bin\Debug\net7.0\MapperlyTestForMapping.runtimeconfig.json
+D:\MapperlyMappingTest\MapperlyTestForMapping\bin\Debug\net7.0\MapperlyTestForMapping.dll
+D:\MapperlyMappingTest\MapperlyTestForMapping\bin\Debug\net7.0\MapperlyTestForMapping.pdb
+D:\MapperlyMappingTest\MapperlyTestForMapping\bin\Debug\net7.0\Riok.Mapperly.Abstractions.dll
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.csproj.AssemblyReference.cache
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.GeneratedMSBuildEditorConfig.editorconfig
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.AssemblyInfoInputs.cache
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.AssemblyInfo.cs
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.csproj.CoreCompileInputs.cache
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.csproj.CopyComplete
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.dll
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\refint\MapperlyTestForMapping.dll
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.pdb
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\MapperlyTestForMapping.genruntimeconfig.cache
+D:\MapperlyMappingTest\MapperlyTestForMapping\obj\Debug\net7.0\ref\MapperlyTestForMapping.dll

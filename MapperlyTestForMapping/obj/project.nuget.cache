@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ThTR9ETiQclE6QMA6jKMi6Wje43B7x3RzbYlvvXoKE77N9BtdfvNn5HJhs6NFGDWc4x7SuxpE7ei4BhW+wlYpA==",
+  "success": true,
+  "projectFilePath": "D:\\MapperlyMappingTest\\MapperlyTestForMapping\\MapperlyTestForMapping.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rames\\.nuget\\packages\\riok.mapperly\\3.1.0\\riok.mapperly.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
