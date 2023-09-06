@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MapperlyMappingTest
+﻿namespace MapperlyMappingTest
 {
     //public class LinkDto
     //{
@@ -17,9 +11,22 @@ namespace MapperlyMappingTest
 
     public record LinkDto(string Label, string Url, DateTime Created, DateTime Updated, Kontakt Kontakt)
     {
-        public LinkDto():this(default, default, default, default, default ) { }
+        public LinkDto() : this(default, default, default, default, default) { }
     }
 
     public record Kontakt(string KontaktNavn, string? Telefon, string? Email);
+
+
+    public record MyLinkDto
+    {
+        public string LinkNavn { get; init; } = default!;
+        public string LinkUrl { get; init; } = default!;
+
+        public MyLinkDto(string label, string url)
+        {
+            LinkNavn = label;
+            LinkUrl = url;
+        }
+    }
 
 }

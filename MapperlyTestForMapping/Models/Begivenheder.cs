@@ -1,14 +1,9 @@
 ﻿using MapperlyMappingTest;
 using Riok.Mapperly.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MapperlyTestForMapping.Models
 {
-    public class Begivenheder:BaseEntity<Guid>, IAggregateRoot
+    public class Begivenheder : BaseEntity<Guid>, IAggregateRoot
     {
         public string Headline { get; private set; } = default!;
         public string? Description { get; private set; }
@@ -27,22 +22,22 @@ namespace MapperlyTestForMapping.Models
         public IList<Link> Links { get; private set; } = new List<Link>();
 
         [MapperConstructor]
-        public Begivenheder(string Titel, string? Beskrivelse, DateOnly PublishDateOnly, 
-            TimeOnly PublishTimeOnly, int prioritet, int stoftype, 
-            List<Link> link)
+        public Begivenheder(string Titel, string? Beskrivelse, DateOnly PublishDateOnly,
+            TimeOnly PublishTimeOnly, int prioritet, int stoftype,
+            List<Link> myLink)
         {
             Headline = Titel;
             Description = Beskrivelse;
             //TosFYI = tosFYI;
-         
+
             Prioritet = prioritet;
             Stoftype = stoftype;
             //BegivenhederStatus = begivenhederStatus;
             //IPTC = iPTC;
             //HistId = histId;
             DateOnly = PublishDateOnly;
-            TimeOnly = PublishTimeOnly;         
-            Links = link;
+            TimeOnly = PublishTimeOnly;
+            Links = myLink;
         }
         public Begivenheder() { }
     }

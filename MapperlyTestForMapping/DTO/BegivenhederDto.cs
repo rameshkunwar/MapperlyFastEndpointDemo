@@ -1,4 +1,7 @@
-﻿namespace MapperlyTestForMapping.DTO
+﻿using MapperlyMappingTest;
+using System.Text.Json.Serialization;
+
+namespace MapperlyTestForMapping.DTO
 {
     public record BegivenhederDto
     {
@@ -8,7 +11,11 @@
         public string PublishTimeOnly { get; init; }
         public int Prioritet { get; init; }
         public int Stoftype { get; init; }
-        //public List<LinkDto> Link { get; init; }
+
+
+        [JsonInclude]
+        [JsonPropertyName("links")]
+        public List<MyLinkDto> MyLink { get; private init; }
 
         public BegivenhederDto()
         {
@@ -16,7 +23,7 @@
         }
 
         public BegivenhederDto(string headline, string? description, string dateOnly, string timeOnly,
-            int prioritet, int stoftype)
+            int prioritet, int stoftype, List<MyLinkDto> links)
         {
             Titel = headline;
             Beskrivelse = description;
@@ -24,6 +31,7 @@
             PublishTimeOnly = timeOnly;
             Prioritet = prioritet;
             Stoftype = stoftype;
+            MyLink = links;
         }
 
     }

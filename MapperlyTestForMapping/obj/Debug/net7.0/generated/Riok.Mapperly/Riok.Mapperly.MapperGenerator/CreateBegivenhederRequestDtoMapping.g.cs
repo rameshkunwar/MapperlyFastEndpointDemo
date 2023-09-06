@@ -6,7 +6,7 @@ namespace MapperlyTestForMapping.MappingProfiles
     {
         public static partial global::MapperlyTestForMapping.Models.Begivenheder MapDtoToObj(global::MapperlyTestForMapping.DTO.BegivenhederCreateRequestDto begivenhederCreateRequestDto)
         {
-            var target = new global::MapperlyTestForMapping.Models.Begivenheder(begivenhederCreateRequestDto.Titel, begivenhederCreateRequestDto.Beskrivelse, global::System.DateOnly.Parse(begivenhederCreateRequestDto.PublishDateOnly), global::System.TimeOnly.Parse(begivenhederCreateRequestDto.PublishTimeOnly), (int)begivenhederCreateRequestDto.Prioritet, (int)begivenhederCreateRequestDto.Stoftype, MapToList(begivenhederCreateRequestDto.Link));
+            var target = new global::MapperlyTestForMapping.Models.Begivenheder();
             foreach (var item in begivenhederCreateRequestDto.Link)
             {
                 target.Links.Add(MapToLink(item));
@@ -20,17 +20,6 @@ namespace MapperlyTestForMapping.MappingProfiles
             if (source == null)
                 throw new System.ArgumentNullException(nameof(source));
             var target = new global::MapperlyMappingTest.Link(source.Linknavn, source.LinkUrl);
-            return target;
-        }
-
-        private static global::System.Collections.Generic.List<global::MapperlyMappingTest.Link> MapToList(global::System.Collections.Generic.List<global::MapperlyTestForMapping.DTO.CreateRequestLinkDto?> source)
-        {
-            var target = new global::System.Collections.Generic.List<global::MapperlyMappingTest.Link>(source.Count);
-            foreach (var item in source)
-            {
-                target.Add(MapToLink(item));
-            }
-
             return target;
         }
     }

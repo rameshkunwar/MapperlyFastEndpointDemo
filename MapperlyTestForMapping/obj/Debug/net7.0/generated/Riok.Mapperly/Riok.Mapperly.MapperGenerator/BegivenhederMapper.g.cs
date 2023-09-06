@@ -17,5 +17,33 @@ namespace MapperlyTestForMapping.MappingProfiles
             };
             return target;
         }
+
+        public static partial global::MapperlyTestForMapping.Models.Begivenheder ToBegivenheder(global::MapperlyTestForMapping.DTO.BegivenhederDto begivenhederDto)
+        {
+            var target = new global::MapperlyTestForMapping.Models.Begivenheder(begivenhederDto.Titel, begivenhederDto.Beskrivelse, global::System.DateOnly.Parse(begivenhederDto.PublishDateOnly), global::System.TimeOnly.Parse(begivenhederDto.PublishTimeOnly), begivenhederDto.Prioritet, begivenhederDto.Stoftype, MapToList(begivenhederDto.MyLink));
+            foreach (var item in begivenhederDto.MyLink)
+            {
+                target.Links.Add(MapToLink(item));
+            }
+
+            return target;
+        }
+
+        private static global::MapperlyMappingTest.Link MapToLink(global::MapperlyMappingTest.MyLinkDto source)
+        {
+            var target = new global::MapperlyMappingTest.Link(source.LinkNavn, source.LinkUrl);
+            return target;
+        }
+
+        private static global::System.Collections.Generic.List<global::MapperlyMappingTest.Link> MapToList(global::System.Collections.Generic.List<global::MapperlyMappingTest.MyLinkDto> source)
+        {
+            var target = new global::System.Collections.Generic.List<global::MapperlyMappingTest.Link>(source.Count);
+            foreach (var item in source)
+            {
+                target.Add(MapToLink(item));
+            }
+
+            return target;
+        }
     }
 }
