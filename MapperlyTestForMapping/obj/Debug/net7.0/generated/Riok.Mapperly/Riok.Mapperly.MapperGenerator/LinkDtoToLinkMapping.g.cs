@@ -6,7 +6,7 @@ namespace MapperlyTestForMapping.MappingProfiles
     {
         public static partial global::MapperlyMappingTest.Link MapLinkDtoToObj(global::MapperlyTestForMapping.DTO.CreateRequestLinkDto createRequestLinkDto)
         {
-            var target = new global::MapperlyMappingTest.Link(createRequestLinkDto.Linknavn, createRequestLinkDto.LinkUrl);
+            var target = new global::MapperlyMappingTest.Link();
             return target;
         }
     }

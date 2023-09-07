@@ -17,15 +17,22 @@
     public record Kontakt(string KontaktNavn, string? Telefon, string? Email);
 
 
-    public record MyLinkDto
-    {
-        public string LinkNavn { get; init; } = default!;
-        public string LinkUrl { get; init; } = default!;
+    //public record MyLinkDto
+    //{
+    //    public string LinkNavn { get; init; } = default!;
+    //    public string LinkUrl { get; init; } = default!;
 
-        public MyLinkDto(string label, string url)
+    //    public MyLinkDto(string label, string url)
+    //    {
+    //        LinkNavn = label;
+    //        LinkUrl = url;
+    //    }
+    //}
+    public record MyLinkDto(string Label, string Url)
+    {
+        public MyLinkDto() : this(default!, default!)
         {
-            LinkNavn = label;
-            LinkUrl = url;
+
         }
     }
 

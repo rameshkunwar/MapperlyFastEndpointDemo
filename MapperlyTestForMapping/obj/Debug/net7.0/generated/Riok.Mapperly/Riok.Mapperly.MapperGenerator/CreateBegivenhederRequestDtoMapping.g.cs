@@ -19,7 +19,7 @@ namespace MapperlyTestForMapping.MappingProfiles
         {
             if (source == null)
                 throw new System.ArgumentNullException(nameof(source));
-            var target = new global::MapperlyMappingTest.Link(source.Linknavn, source.LinkUrl);
+            var target = new global::MapperlyMappingTest.Link();
             return target;
         }
     }

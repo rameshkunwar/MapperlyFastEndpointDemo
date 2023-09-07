@@ -5,18 +5,18 @@ using MapperlyTestForMapping.MappingProfiles;
 using MapperlyTestForMapping.Models;
 using System.Text.Json;
 
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
-Link link = new Link("Ritzau", "https://ritzau.dk", DateTime.Now, 1);
-//var mapper = new LinkMapper();
+//Link link = new Link("Ritzau", "https://ritzau.dk", DateTime.Now, 1);
+////var mapper = new LinkMapper();
 
-LinkDto dto = LinkMapper.MapLinkToDto(link);
-//var dto = mapper.MapLinkToDto(link);
+//LinkDto dto = LinkMapper.MapLinkToDto(link);
+////var dto = mapper.MapLinkToDto(link);
 
-Console.WriteLine(dto.Label);
-Console.WriteLine(dto.Url);
+//Console.WriteLine(dto.Label);
+//Console.WriteLine(dto.Url);
 
-Link myLink = LinkDtoMapper.MapLinkDtoToLink(dto);
+//Link myLink = LinkDtoMapper.MapLinkDtoToLink(dto);
 
 /* filter specification model */
 FilterSpecificationDto filtersDto = new FilterSpecificationDto(DateOnly.Parse("2023-08-20"), DateOnly.Parse("2023-08-25"), new int[] { 1, 3, 5 }, null, null, 12);
@@ -46,7 +46,8 @@ List<BegivenhederReadOnly> begivenheders = new()
 // * begivenheder reuest dto
 // */
 
-//var linkDto = new CreateRequestLinkDto(Linknavn: "ritzaU", LinkUrl: "https://ritzau.dk");
+CreateRequestLinkDto linkDto = new CreateRequestLinkDto(Linknavn: "ritzaU", LinkUrl: "https://ritzau.dk");
+Link linkObj = new Link(label: "Kunwar", url: "https://kunwar.dk");
 
 //var requestDto = new BegivenhederCreateRequestDto("titel", "beskrivse", "2023-08-21", "12:45", 
 //    MapperlyTestForMapping.StoftyperTypes.Indland, MapperlyTestForMapping.PriorityTypes.Prioriteret,
@@ -54,8 +55,26 @@ List<BegivenhederReadOnly> begivenheders = new()
 
 //var begivObj = CreateBegivenhederRequestDtoMapping.MapDtoToObj(requestDto);
 //Console.WriteLine(begivObj.Headline);
+Begivenheder begivenhederTest = new("titel", "beskrivelse", DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, 2, new List<Link> { linkObj }, new List<MapperlyTestForMapping.Models.Kontakt>());
 
-Begivenheder begivenheder = new Begivenheder("titel", "beskrivelse", DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, 2, new List<Link>());
+BegivenhederDto toBegivDto = BegivenhederMapper.ToBegivenhederDto(begivenhederTest);
+Console.WriteLine(toBegivDto.Links.Count);
+
+Begivenheder toBegivenhederAgain = BegivenhederMapper.ToBegivenheder(toBegivDto);
+
+Console.ReadLine();
+
+begivenhederTest.Id = Guid.NewGuid();
+begivenhederTest.Created = DateTime.Now;
+
+EditBegivenhederDto toEditBegivDto = BegivenhederMapper.ToEditBegivenheder(begivenhederTest);
+
+Console.ReadLine();
+
+
+#region Serialization-Deserialization
+//Testing serialization - de-serialization
+Begivenheder begivenheder = new Begivenheder("titel", "beskrivelse", DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, 2, new List<Link>(), new List<MapperlyTestForMapping.Models.Kontakt>());
 
 BegivenhederDto begivDto = BegivenhederMapper.ToBegivenhederDto(begivenheder);
 
@@ -68,5 +87,5 @@ Console.WriteLine("\n" + deserialized);
 Console.ReadLine();
 
 Console.WriteLine(begivDto.ToString());
-
+#endregion 
 

@@ -1,17 +1,12 @@
 ﻿using MapperlyTestForMapping.Models;
 using Riok.Mapperly.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MapperlyMappingTest
 {
-    public class Link:BaseEntity<int>, IAggregateRoot
+    public class Link : BaseEntity<int>, IAggregateRoot
     {
-        public string Label { get;  private set; }
-        public string Url { get;  private set; }
+        public string Label { get; private set; }
+        public string Url { get; private set; }
         public Guid BegivenhederId { get; set; }
         public Begivenheder Begivenheder { get; set; } = default!;
         public int KontaktId { get; set; }
@@ -20,14 +15,14 @@ namespace MapperlyMappingTest
         public Link() { }
 
         [MapperConstructor]
-        public Link(string linknavn, string linkUrl)
+        public Link(string label, string url)
         {
-            Label = linknavn;
-            Url = linkUrl;
+            Label = label;
+            Url = url;
 
         }
 
-       
+
         public Link(string linknavn, string linkUrl, DateTime updated, int kontaktId)
         {
             Label = linknavn;
@@ -36,6 +31,6 @@ namespace MapperlyMappingTest
             KontaktId = kontaktId;
         }
 
-        
+
     }
 }

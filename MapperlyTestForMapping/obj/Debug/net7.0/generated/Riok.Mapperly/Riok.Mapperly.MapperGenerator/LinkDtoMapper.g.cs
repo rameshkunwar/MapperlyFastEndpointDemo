@@ -6,7 +6,7 @@ namespace MapperlyMappingTest
     {
         public static partial global::MapperlyMappingTest.Link MapLinkDtoToLink(global::MapperlyMappingTest.LinkDto linkDto)
         {
-            var target = new global::MapperlyMappingTest.Link();
+            var target = new global::MapperlyMappingTest.Link(linkDto.Label, linkDto.Url);
             target.Kontakt = linkDto.Kontakt;
             target.Created = linkDto.Created;
             target.Updated = linkDto.Updated;

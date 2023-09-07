@@ -23,10 +23,10 @@ namespace MapperlyTestForMapping.MappingProfiles
     public static partial class CreateBegivenhederRequestDtoMapping
     {
         
-        [MapProperty(nameof(BegivenhederCreateRequestDto.Titel),nameof(Models.Begivenheder.Headline))]
-        [MapProperty(nameof(BegivenhederCreateRequestDto.Beskrivelse), nameof(Models.Begivenheder.Description))]
-        [MapProperty(nameof(BegivenhederCreateRequestDto.PublishDateOnly), nameof(Models.Begivenheder.DateOnly))]
-        [MapProperty(nameof(BegivenhederCreateRequestDto.PublishTimeOnly), nameof(Models.Begivenheder.TimeOnly))]
+        [MapProperty(nameof(BegivenhederCreateRequestDto.Titel),nameof(Models.Begivenheder.Titel))]
+        [MapProperty(nameof(BegivenhederCreateRequestDto.Beskrivelse), nameof(Models.Begivenheder.Beskrivelse))]
+        [MapProperty(nameof(BegivenhederCreateRequestDto.PublishDateOnly), nameof(Models.Begivenheder.PublishDateOnly))]
+        [MapProperty(nameof(BegivenhederCreateRequestDto.PublishTimeOnly), nameof(Models.Begivenheder.PublishTimeOnly))]
         //[MapProperty(nameof(BegivenhederCreateRequestDto.Prioritet), nameof(Models.Begivenheder.Prioritet))]
         //[MapProperty(nameof(BegivenhederCreateRequestDto.Stoftype), nameof(Models.Begivenheder.Stoftype))]
         [MapProperty(nameof(BegivenhederCreateRequestDto.Link), nameof(Models.Begivenheder.Links))]
