@@ -1,13 +1,3 @@
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.csproj.AssemblyReference.cache
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.GeneratedMSBuildEditorConfig.editorconfig
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.AssemblyInfoInputs.cache
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.AssemblyInfo.cs
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.csproj.CoreCompileInputs.cache
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.MvcApplicationPartsAssemblyInfo.cs
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.MvcApplicationPartsAssemblyInfo.cache
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.dll
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\refint\FastEndpointsDemo.dll
-D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.pdb
 D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\MapperlyTestForMapping.deps.json
 D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\MapperlyTestForMapping.runtimeconfig.json
 D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\MapperlyTestForMapping.exe
@@ -38,6 +28,13 @@ D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\Riok.Mapperly.Abstract
 D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\YamlDotNet.dll
 D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\MapperlyTestForMapping.dll
 D:\MapperlyMappingTest\FastEndpointsDemo\bin\Debug\net7.0\MapperlyTestForMapping.pdb
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.csproj.AssemblyReference.cache
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.AssemblyInfoInputs.cache
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.AssemblyInfo.cs
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.csproj.CoreCompileInputs.cache
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.MvcApplicationPartsAssemblyInfo.cs
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.MvcApplicationPartsAssemblyInfo.cache
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\staticwebassets\msbuild.FastEndpointsDemo.Microsoft.AspNetCore.StaticWebAssets.props
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\staticwebassets\msbuild.build.FastEndpointsDemo.props
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.FastEndpointsDemo.props
@@ -47,5 +44,8 @@ D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\staticwebassets.build.
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\staticwebassets.development.json
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\scopedcss\bundle\FastEndpointsDemo.styles.css
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.csproj.CopyComplete
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.dll
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\refint\FastEndpointsDemo.dll
+D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.pdb
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\FastEndpointsDemo.genruntimeconfig.cache
 D:\MapperlyMappingTest\FastEndpointsDemo\obj\Debug\net7.0\ref\FastEndpointsDemo.dll

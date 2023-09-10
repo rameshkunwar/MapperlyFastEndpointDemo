@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace FastEndpointsDemo.Endpoints
 {
-    public class Create : Endpoint<BegivenhederDto, Results<Ok<ResponseDto>, NotFound, ProblemDetails>>
+    public class Create : Endpoint<BegivenhederDto, Results<Ok<BegivenhederDto>, NotFound, ProblemDetails>>
     {
         public override void Configure()
         {
@@ -14,7 +14,7 @@ namespace FastEndpointsDemo.Endpoints
 
         }
 
-        public override async Task<Results<Ok<ResponseDto>, NotFound, ProblemDetails>> ExecuteAsync(BegivenhederDto req, CancellationToken ct)
+        public override async Task<Results<Ok<BegivenhederDto>, NotFound, ProblemDetails>> ExecuteAsync(BegivenhederDto req, CancellationToken ct)
         {
             await Task.CompletedTask;
 
@@ -26,7 +26,9 @@ namespace FastEndpointsDemo.Endpoints
 
             MapperlyTestForMapping.Models.Begivenheder? toEntity = BegivenhederMapper.ToBegivenheder(req);
 
-            return TypedResults.Ok(new ResponseDto(toEntity is not null));
+            BegivenhederDto begivenhederDto = BegivenhederMapper.ToBegivenhederDto(toEntity);
+
+            return TypedResults.Ok(begivenhederDto);
         }
     }
 }

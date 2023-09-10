@@ -43,6 +43,15 @@ namespace MapperlyTestForMapping.DTO
         }
     }
 
+    //public record BegivenhederDto(List<MyLinkDto> Links, List<KontaktDto> Kontakts, string PublishDateOnly, string PublishTimeOnly, string Titel, string? Beskrivelse,
+    //    int Prioritet, int Stoftype)
+    //{
+    //    public BegivenhederDto() : this(default!, default!, default!, default!, default!, default!, default!, default!)
+    //    {
+
+    //    }
+    //}
+
     public record EditBegivenhederDto(Guid Id, DateTime Created, string Titel, string? Beskrivelse, string PublishDateOnly, string PublishTimeOnly, int Prioritet, int Stoftype, List<MyLinkDto> links)
     {
         public EditBegivenhederDto() : this(default, default, default!, default, default!, default!, default!, default, default!)
