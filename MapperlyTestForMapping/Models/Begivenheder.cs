@@ -1,4 +1,5 @@
 ﻿using MapperlyMappingTest;
+using MapperlyTestForMapping.DTO;
 using Riok.Mapperly.Abstractions;
 
 namespace MapperlyTestForMapping.Models
@@ -7,15 +8,15 @@ namespace MapperlyTestForMapping.Models
     {
         public string Titel { get; private set; } = default!;
         public string? Beskrivelse { get; private set; }
-        //public string? TosFYI { get; private set; }
+        public string? TosFYI { get; private set; }
         //  public int NewsValue { get; private set; }
         public int Prioritet { get; private set; }
-        public int Stoftype { get; private set; }
+        public Sections[] Stoftype { get; private set; }
 
         //should represent by en enum, expected values could be Finished, Unfinished
         //public int BegivenhederStatus { get; private set; }
-        //public string? IPTC { get; private set; }
-        //public string? HistId { get; private set; }
+        public string? IPTC { get; private set; }
+        public string? HistId { get; private set; }
         public DateOnly PublishDateOnly { get; private set; }
         public TimeOnly PublishTimeOnly { get; private set; }
 
@@ -24,19 +25,19 @@ namespace MapperlyTestForMapping.Models
         public IList<Kontakt> Kontakts { get; private set; } = new List<Kontakt>();
 
         [MapperConstructor]
-        public Begivenheder(string Titel, string? Beskrivelse, DateOnly PublishDateOnly,
-            TimeOnly PublishTimeOnly, int prioritet, int stoftype,
+        public Begivenheder(string Titel, string? Beskrivelse, string? tosFYI, DateOnly PublishDateOnly,
+            TimeOnly PublishTimeOnly, int prioritet, Sections[] stoftype, string iptc, string histId,
             List<Link> links, List<Kontakt> kontakts)
         {
             this.Titel = Titel;
             this.Beskrivelse = Beskrivelse;
-            //TosFYI = tosFYI;
+            TosFYI = tosFYI;
 
             Prioritet = prioritet;
             Stoftype = stoftype;
             //BegivenhederStatus = begivenhederStatus;
-            //IPTC = iPTC;
-            //HistId = histId;
+            IPTC = iptc;
+            HistId = histId;
             this.PublishDateOnly = PublishDateOnly;
             this.PublishTimeOnly = PublishTimeOnly;
             Links = links;

@@ -55,26 +55,28 @@ Link linkObj = new Link(label: "Kunwar", url: "https://kunwar.dk");
 
 //var begivObj = CreateBegivenhederRequestDtoMapping.MapDtoToObj(requestDto);
 //Console.WriteLine(begivObj.Headline);
-Begivenheder begivenhederTest = new("titel", "beskrivelse", DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, 2, new List<Link> { linkObj }, new List<MapperlyTestForMapping.Models.Kontakt>());
+//Begivenheder begivenhederTest = new("titel", "beskrivelse", null, DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, 2, new List<Link> { linkObj }, new List<MapperlyTestForMapping.Models.Kontakt>());
 
-BegivenhederDto toBegivDto = BegivenhederMapper.ToBegivenhederDto(begivenhederTest);
-Console.WriteLine(toBegivDto.Links.Count);
+//BegivenhederDto toBegivDto = BegivenhederMapper.ToBegivenhederDto(begivenhederTest);
+//Console.WriteLine(toBegivDto.Links.Count);
 
-Begivenheder toBegivenhederAgain = BegivenhederMapper.ToBegivenheder(toBegivDto);
+//Begivenheder toBegivenhederAgain = BegivenhederMapper.ToBegivenheder(toBegivDto);
 
 Console.ReadLine();
 
-begivenhederTest.Id = Guid.NewGuid();
-begivenhederTest.Created = DateTime.Now;
+//begivenhederTest.Id = Guid.NewGuid();
+//begivenhederTest.Created = DateTime.Now;
 
-EditBegivenhederDto toEditBegivDto = BegivenhederMapper.ToEditBegivenheder(begivenhederTest);
+//EditBegivenhederDto toEditBegivDto = BegivenhederMapper.ToEditBegivenheder(begivenhederTest);
 
 Console.ReadLine();
 
 
 #region Serialization-Deserialization
 //Testing serialization - de-serialization
-Begivenheder begivenheder = new Begivenheder("titel", "beskrivelse", DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, 2, new List<Link>(), new List<MapperlyTestForMapping.Models.Kontakt>());
+Sections[] sects = new[] { Sections.Indland, Sections.Politik };
+Begivenheder begivenheder = new Begivenheder
+    ("titel", "beskrivelse", null, DateOnly.Parse("2023-08-10"), TimeOnly.Parse("10:20"), 1, sects, null, null, new List<Link>(), new List<MapperlyTestForMapping.Models.Kontakt>());
 
 BegivenhederDto begivDto = BegivenhederMapper.ToBegivenhederDto(begivenheder);
 

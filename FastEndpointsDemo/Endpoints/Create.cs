@@ -10,6 +10,12 @@ namespace FastEndpointsDemo.Endpoints
         public override void Configure()
         {
             Post("/api/create");
+            Summary(s =>
+            {
+                s.Summary = "create begivenheder";
+                s.Responses[200] = "OK, Begivenheder has been successfully created";
+                s.RequestParam(r => r.Stoftype, "sections as array");
+            });
             AllowAnonymous();
 
         }

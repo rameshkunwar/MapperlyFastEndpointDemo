@@ -34,10 +34,12 @@ namespace MapperlyTestForMapping.DTO
     //    }
 
     //}
+    public enum Sections { Indland, Sports, Udland, Politik };
 
-    public record BegivenhederDto(string Titel, string? Beskrivelse, string PublishDateOnly, string PublishTimeOnly, int Prioritet, int Stoftype, List<MyLinkDto> Links, List<KontaktDto> Kontakts)
+    public record BegivenhederDto(Guid Id, string Titel, string? Beskrivelse, string PublishDateOnly, string PublishTimeOnly,
+        int Prioritet, Sections[]? Stoftype, string? IPTC, string? HistId, List<MyLinkDto> Links, List<KontaktDto> Kontakts)
     {
-        public BegivenhederDto() : this(default!, default, default!, default!, default!, default, default!, default!)
+        public BegivenhederDto() : this(default, default!, default!, default!, default!, default, default!, default!, default, default!, default!)
         {
 
         }

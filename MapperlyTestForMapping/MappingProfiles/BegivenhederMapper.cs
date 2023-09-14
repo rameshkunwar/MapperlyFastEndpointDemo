@@ -24,10 +24,13 @@ namespace MapperlyTestForMapping.MappingProfiles
         //[MapProperty(nameof(BegivenhederDto.PublishDateOnly), nameof(Begivenheder.PublishDateOnly))]
         //[MapProperty(nameof(BegivenhederDto.PublishTimeOnly), nameof(Begivenheder.PublishTimeOnly))]
         //[MapProperty(nameof(BegivenhederDto.Links), nameof(Begivenheder.Links))]
+
+        //[MapperIgnoreSource(nameof(BegivenhederDto.TosFYI))]
+        [MapperIgnoreTarget(nameof(Begivenheder.TosFYI))]
         public static partial Begivenheder ToBegivenheder(BegivenhederDto begivenhederDto);
 
 
-        public static partial EditBegivenhederDto ToEditBegivenheder(Begivenheder begivenheder1);
+        //public static partial EditBegivenhederDto ToEditBegivenheder(Begivenheder begivenheder1);
 
     }
 }
