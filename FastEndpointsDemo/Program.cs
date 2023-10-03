@@ -1,5 +1,7 @@
 using FastEndpoints;
 using FastEndpoints.Swagger;
+using FastEndpointsDemo.SignalR;
+using System.Text.Json.Serialization;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +17,14 @@ builder.Services.SwaggerDocument(o =>
         s.Title = "My API";
         s.Version = "v1";
     };
+    o.SerializerSettings = s =>
+    {
+        s.PropertyNamingPolicy = null;
+        s.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
+    };
 }); //define a swagger document
+
+builder.Services.AddSignalR();
 
 WebApplication app = builder.Build();
 
@@ -26,6 +35,8 @@ app.UseDefaultExceptionHandler();
 app.UseAuthorization();
 app.UseFastEndpoints();
 app.UseSwaggerGen(); //add this
+
+app.MapHub<MessageHub>("/SignalRHub");
 app.Run();
 
 
