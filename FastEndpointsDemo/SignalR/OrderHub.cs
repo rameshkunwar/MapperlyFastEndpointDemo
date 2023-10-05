@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.SignalR;
+﻿using MapperlyTestForMapping.DTO;
+using Microsoft.AspNetCore.SignalR;
 
 namespace FastEndpointsDemo.SignalR
 {
-    public class MessageHub : Hub<IMessageClient>
+    public class OrderHub : Hub<IMessageClient>
     {
         public async Task SendMessage(string user, string message)
         {
@@ -13,6 +14,11 @@ namespace FastEndpointsDemo.SignalR
         {
             string message = await Clients.Client(connectionId).GetMessage();
             return message;
+        }
+
+        public async Task PushBegivenhederToClients(BegivenhederDto begivenhederDto)
+        {
+            await Clients.All.BroadcastMessage(begivenhederDto);
         }
     }
 }
