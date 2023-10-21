@@ -1,0 +1,419 @@
+2023-10-16 13:30:16.821 +02:00 [INF] Registered 1 endpoints in 484 milliseconds.
+2023-10-16 13:30:17.260 +02:00 [INF] No validators found in the system!
+2023-10-16 13:30:17.308 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2023-10-16 13:30:17.339 +02:00 [DBG] Hosting starting
+2023-10-16 13:30:17.610 +02:00 [INF] Now listening on: https://localhost:7260
+2023-10-16 13:30:17.616 +02:00 [INF] Now listening on: http://localhost:5123
+2023-10-16 13:30:17.618 +02:00 [DBG] Loaded hosting startup assembly FastEndpointsDemo
+2023-10-16 13:30:17.620 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-16 13:30:17.623 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-16 13:30:17.628 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 13:30:17.631 +02:00 [INF] Hosting environment: Development
+2023-10-16 13:30:17.636 +02:00 [INF] Content root path: D:\MapperlyMappingTest\FastEndpointsDemo
+2023-10-16 13:30:17.648 +02:00 [DBG] Hosting started
+2023-10-16 13:30:18.004 +02:00 [DBG] Connection id "0HMUE7D33VJEU" received FIN.
+2023-10-16 13:30:18.010 +02:00 [DBG] Connection id "0HMUE7D33VJEU" accepted.
+2023-10-16 13:30:18.013 +02:00 [DBG] Connection id "0HMUE7D33VJEU" started.
+2023-10-16 13:30:18.028 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-16 13:30:18.050 +02:00 [DBG] Connection id "0HMUE7D33VJEU" stopped.
+2023-10-16 13:30:18.053 +02:00 [DBG] Connection id "0HMUE7D33VJEU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-16 13:30:18.653 +02:00 [DBG] Connection id "0HMUE7D33VJEV" accepted.
+2023-10-16 13:30:18.692 +02:00 [DBG] Connection id "0HMUE7D33VJEV" started.
+2023-10-16 13:30:18.891 +02:00 [DBG] Connection 0HMUE7D33VJEV established using the following protocol: "Tls13"
+2023-10-16 13:30:19.090 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/Swagger - -
+2023-10-16 13:30:19.151 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-16 13:30:19.237 +02:00 [DBG] No candidates found for the request path '/Swagger'
+2023-10-16 13:30:19.238 +02:00 [DBG] Request did not match any endpoints
+2023-10-16 13:30:19.260 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/Swagger - - - 302 0 - 173.7324ms
+2023-10-16 13:30:19.300 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - -
+2023-10-16 13:30:19.307 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-16 13:30:19.309 +02:00 [DBG] Request did not match any endpoints
+2023-10-16 13:30:19.571 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-16 13:30:19.687 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-16 13:30:19.692 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - - - 200 - text/html;+charset=utf-8 391.8376ms
+2023-10-16 13:30:19.699 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 13:30:19.752 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 56.2354ms
+2023-10-16 13:30:19.820 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-16 13:30:19.879 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 59.1252ms
+2023-10-16 13:30:20.084 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - -
+2023-10-16 13:30:20.089 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-16 13:30:20.092 +02:00 [DBG] Request did not match any endpoints
+2023-10-16 13:30:20.209 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-16 13:30:21.040 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 957.1340ms
+2023-10-16 13:30:55.498 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7260/api/create application/json 457
+2023-10-16 13:30:55.506 +02:00 [DBG] 1 candidate(s) found for the request path '/api/create'
+2023-10-16 13:30:55.510 +02:00 [DBG] Request matched endpoint 'HTTP: POST /api/create'
+2023-10-16 13:30:55.513 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-16 13:30:55.515 +02:00 [INF] Executing endpoint 'HTTP: POST /api/create'
+2023-10-16 13:30:55.673 +02:00 [DBG] Connection id "0HMUE7D33VJEV", Request id "0HMUE7D33VJEV:0000000B": started reading request body.
+2023-10-16 13:30:55.676 +02:00 [DBG] Connection id "0HMUE7D33VJEV", Request id "0HMUE7D33VJEV:0000000B": done reading request body.
+2023-10-16 13:30:55.766 +02:00 [INF] Created begivenheder
+2023-10-16 13:30:55.768 +02:00 [WRN] @toEntity
+2023-10-16 13:30:55.780 +02:00 [INF] Setting HTTP status code 200.
+2023-10-16 13:30:55.785 +02:00 [INF] Writing value of type 'BegivenhederDto' as Json.
+2023-10-16 13:30:55.812 +02:00 [INF] Executed endpoint 'HTTP: POST /api/create'
+2023-10-16 13:30:55.817 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7260/api/create application/json 457 - 200 - application/json;+charset=utf-8 318.5362ms
+2023-10-16 13:33:35.712 +02:00 [INF] Registered 1 endpoints in 750 milliseconds.
+2023-10-16 13:33:35.898 +02:00 [INF] No validators found in the system!
+2023-10-16 13:33:35.967 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2023-10-16 13:33:36.002 +02:00 [DBG] Hosting starting
+2023-10-16 13:33:36.189 +02:00 [INF] Now listening on: https://localhost:7260
+2023-10-16 13:33:36.192 +02:00 [INF] Now listening on: http://localhost:5123
+2023-10-16 13:33:36.194 +02:00 [DBG] Loaded hosting startup assembly FastEndpointsDemo
+2023-10-16 13:33:36.195 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-16 13:33:36.197 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-16 13:33:36.200 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-16 13:33:36.202 +02:00 [INF] Hosting environment: Development
+2023-10-16 13:33:36.203 +02:00 [INF] Content root path: D:\MapperlyMappingTest\FastEndpointsDemo
+2023-10-16 13:33:36.209 +02:00 [DBG] Hosting started
+2023-10-16 13:33:36.420 +02:00 [DBG] Connection id "0HMUE7EU87DH7" received FIN.
+2023-10-16 13:33:36.420 +02:00 [DBG] Connection id "0HMUE7EU87DH8" received FIN.
+2023-10-16 13:33:36.423 +02:00 [DBG] Connection id "0HMUE7EU87DH7" accepted.
+2023-10-16 13:33:36.423 +02:00 [DBG] Connection id "0HMUE7EU87DH8" accepted.
+2023-10-16 13:33:36.438 +02:00 [DBG] Connection id "0HMUE7EU87DH7" started.
+2023-10-16 13:33:36.439 +02:00 [DBG] Connection id "0HMUE7EU87DH8" started.
+2023-10-16 13:33:36.466 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-16 13:33:36.466 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-16 13:33:36.504 +02:00 [DBG] Connection id "0HMUE7EU87DH7" stopped.
+2023-10-16 13:33:36.504 +02:00 [DBG] Connection id "0HMUE7EU87DH8" stopped.
+2023-10-16 13:33:36.510 +02:00 [DBG] Connection id "0HMUE7EU87DH7" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-16 13:33:36.510 +02:00 [DBG] Connection id "0HMUE7EU87DH8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-16 13:33:37.074 +02:00 [DBG] Connection id "0HMUE7EU87DH9" accepted.
+2023-10-16 13:33:37.083 +02:00 [DBG] Connection id "0HMUE7EU87DH9" started.
+2023-10-16 13:33:37.232 +02:00 [DBG] Connection 0HMUE7EU87DH9 established using the following protocol: "Tls13"
+2023-10-16 13:33:37.437 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/Swagger - -
+2023-10-16 13:33:37.516 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-16 13:33:37.616 +02:00 [DBG] No candidates found for the request path '/Swagger'
+2023-10-16 13:33:37.618 +02:00 [DBG] Request did not match any endpoints
+2023-10-16 13:33:37.641 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/Swagger - - - 302 0 - 208.4914ms
+2023-10-16 13:33:37.669 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - -
+2023-10-16 13:33:37.674 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-16 13:33:37.676 +02:00 [DBG] Request did not match any endpoints
+2023-10-16 13:33:37.913 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-16 13:33:38.065 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-16 13:33:38.067 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-16 13:33:38.070 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - - - 200 - text/html;+charset=utf-8 400.8408ms
+2023-10-16 13:33:38.100 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 30.4628ms
+2023-10-16 13:33:38.201 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-16 13:33:38.283 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 81.7010ms
+2023-10-16 13:33:38.461 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - -
+2023-10-16 13:33:38.463 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-16 13:33:38.466 +02:00 [DBG] Request did not match any endpoints
+2023-10-16 13:33:38.489 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-16 13:33:39.252 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 790.6422ms
+2023-10-16 13:34:31.443 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7260/api/create application/json 461
+2023-10-16 13:34:31.449 +02:00 [DBG] 1 candidate(s) found for the request path '/api/create'
+2023-10-16 13:34:31.451 +02:00 [DBG] Request matched endpoint 'HTTP: POST /api/create'
+2023-10-16 13:34:31.454 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-16 13:34:31.456 +02:00 [INF] Executing endpoint 'HTTP: POST /api/create'
+2023-10-16 13:34:31.600 +02:00 [DBG] Connection id "0HMUE7EU87DH9", Request id "0HMUE7EU87DH9:0000000B": started reading request body.
+2023-10-16 13:34:31.605 +02:00 [DBG] Connection id "0HMUE7EU87DH9", Request id "0HMUE7EU87DH9:0000000B": done reading request body.
+2023-10-16 13:34:31.720 +02:00 [INF] Created begivenheder: 
+2023-10-16 13:34:31.732 +02:00 [WRN] {"Titel":null,"Beskrivelse":null,"TosFYI":null,"Prioritet":0,"Stoftype":null,"IPTC":null,"HistId":null,"PublishDateOnly":"0001-01-01","PublishTimeOnly":"00:00:00.0000000","Links":[{"Label":"string","Url":"string","BegivenhederId":"00000000-0000-0000-0000-000000000000","Begivenheder":null,"KontaktId":0,"Kontakt":null,"Id":0,"Created":"0001-01-01T00:00:00.0000000","Updated":null,"$type":"Link"}],"Kontakts":[{"Navn":"Johan","Telephone":"9009900990","Email":"string@jok.dk","Id":0,"Created":"0001-01-01T00:00:00.0000000","Updated":null,"$type":"Kontakt"}],"Id":"44481ab6-f60b-4d04-b0d7-3f4e47e26220","Created":"0001-01-01T00:00:00.0000000","Updated":null,"$type":"Begivenheder"}
+2023-10-16 13:34:31.803 +02:00 [INF] Setting HTTP status code 200.
+2023-10-16 13:34:31.807 +02:00 [INF] Writing value of type 'BegivenhederDto' as Json.
+2023-10-16 13:34:31.838 +02:00 [INF] Executed endpoint 'HTTP: POST /api/create'
+2023-10-16 13:34:31.843 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7260/api/create application/json 461 - 200 - application/json;+charset=utf-8 400.1578ms
+2023-10-21 21:33:07.252 +02:00 [INF] Registered 2 endpoints in 2835 milliseconds.
+2023-10-21 21:33:07.515 +02:00 [INF] No validators found in the system!
+2023-10-21 21:33:07.559 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2023-10-21 21:33:07.587 +02:00 [DBG] Hosting starting
+2023-10-21 21:33:07.728 +02:00 [INF] Now listening on: https://localhost:7260
+2023-10-21 21:33:07.730 +02:00 [INF] Now listening on: http://localhost:5123
+2023-10-21 21:33:07.731 +02:00 [DBG] Loaded hosting startup assembly FastEndpointsDemo
+2023-10-21 21:33:07.731 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-21 21:33:07.732 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-21 21:33:07.733 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 21:33:07.733 +02:00 [INF] Hosting environment: Development
+2023-10-21 21:33:07.734 +02:00 [INF] Content root path: D:\MapperlyMappingTest\FastEndpointsDemo
+2023-10-21 21:33:07.736 +02:00 [DBG] Hosting started
+2023-10-21 21:33:07.888 +02:00 [DBG] Connection id "0HMUIDI6RC3VE" accepted.
+2023-10-21 21:33:07.890 +02:00 [DBG] Connection id "0HMUIDI6RC3VE" started.
+2023-10-21 21:33:07.943 +02:00 [DBG] Connection id "0HMUIDI6RC3VF" accepted.
+2023-10-21 21:33:07.945 +02:00 [DBG] Connection id "0HMUIDI6RC3VF" started.
+2023-10-21 21:33:08.590 +02:00 [DBG] Connection id "0HMUIDI6RC3VG" accepted.
+2023-10-21 21:33:08.600 +02:00 [DBG] Connection id "0HMUIDI6RC3VG" started.
+2023-10-21 21:33:08.616 +02:00 [DBG] Connection id "0HMUIDI6RC3VH" accepted.
+2023-10-21 21:33:08.622 +02:00 [DBG] Connection id "0HMUIDI6RC3VH" started.
+2023-10-21 21:33:08.718 +02:00 [DBG] Connection id "0HMUIDI6RC3VH" received FIN.
+2023-10-21 21:33:08.782 +02:00 [DBG] Connection 0HMUIDI6RC3VG established using the following protocol: "Tls13"
+2023-10-21 21:33:08.782 +02:00 [DBG] Connection 0HMUIDI6RC3VH established using the following protocol: "Tls13"
+2023-10-21 21:33:08.841 +02:00 [DBG] Connection id "0HMUIDI6RC3VH" is closed. The last processed stream ID was 0.
+2023-10-21 21:33:08.848 +02:00 [DBG] Connection id "0HMUIDI6RC3VH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:33:08.858 +02:00 [DBG] The connection queue processing loop for 0HMUIDI6RC3VH completed.
+2023-10-21 21:33:08.871 +02:00 [DBG] Connection id "0HMUIDI6RC3VH" stopped.
+2023-10-21 21:33:08.943 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/Swagger - -
+2023-10-21 21:33:09.041 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 21:33:09.116 +02:00 [DBG] No candidates found for the request path '/Swagger'
+2023-10-21 21:33:09.121 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:09.147 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/Swagger - - - 302 0 - 209.2640ms
+2023-10-21 21:33:09.180 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - -
+2023-10-21 21:33:09.183 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 21:33:09.185 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:09.574 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-21 21:33:09.797 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-21 21:33:09.797 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/swagger-ui.css - -
+2023-10-21 21:33:09.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/swagger-ui-bundle.js - -
+2023-10-21 21:33:09.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:33:09.801 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui.css'
+2023-10-21 21:33:09.798 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/swagger-ui-standalone-preset.js - -
+2023-10-21 21:33:09.800 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - - - 200 - text/html;+charset=utf-8 620.4410ms
+2023-10-21 21:33:09.816 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-10-21 21:33:09.820 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:09.827 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:09.821 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-10-21 21:33:09.832 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:09.851 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 52.6277ms
+2023-10-21 21:33:09.892 +02:00 [DBG] Connection id "0HMUIDI6RC3VI" accepted.
+2023-10-21 21:33:09.893 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-21 21:33:09.895 +02:00 [DBG] Connection id "0HMUIDI6RC3VI" started.
+2023-10-21 21:33:09.899 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/swagger-ui-standalone-preset.js - - - 200 322865 text/javascript 101.1275ms
+2023-10-21 21:33:09.893 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-10-21 21:33:09.909 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-21 21:33:09.912 +02:00 [DBG] Connection 0HMUIDI6RC3VI established using the following protocol: "Tls13"
+2023-10-21 21:33:09.913 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/swagger-ui.css - - - 200 145208 text/css 115.9161ms
+2023-10-21 21:33:09.929 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:33:09.928 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/swagger-ui-standalone-preset.js - -
+2023-10-21 21:33:09.919 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/swagger-ui-bundle.js - - - 200 1045710 text/javascript 118.3844ms
+2023-10-21 21:33:09.935 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js'
+2023-10-21 21:33:09.936 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 6.9210ms
+2023-10-21 21:33:09.939 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:09.942 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-21 21:33:09.942 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/swagger-ui-bundle.js - -
+2023-10-21 21:33:09.948 +02:00 [DBG] No candidates found for the request path '/swagger/swagger-ui-bundle.js'
+2023-10-21 21:33:09.949 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:10.003 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-10-21 21:33:10.021 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/swagger-ui-standalone-preset.js - - - 200 322865 text/javascript 93.1158ms
+2023-10-21 21:33:10.027 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-10-21 21:33:10.029 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/swagger-ui-bundle.js - - - 200 1045710 text/javascript 86.6776ms
+2023-10-21 21:33:10.103 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 160.8429ms
+2023-10-21 21:33:10.832 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - -
+2023-10-21 21:33:10.836 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 21:33:10.839 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:33:10.922 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-21 21:33:12.068 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 1235.3332ms
+2023-10-21 21:33:13.035 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-21 21:33:13.065 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 30.8385ms
+2023-10-21 21:33:17.903 +02:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-10-21 21:33:17.905 +02:00 [DBG] Connection id "0HMUIDI6RC3VE" stopped.
+2023-10-21 21:33:17.907 +02:00 [DBG] Connection id "0HMUIDI6RC3VE" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:33:17.962 +02:00 [DBG] Authentication of the HTTPS connection timed out.
+2023-10-21 21:33:17.963 +02:00 [DBG] Connection id "0HMUIDI6RC3VF" stopped.
+2023-10-21 21:33:17.965 +02:00 [DBG] Connection id "0HMUIDI6RC3VF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:33:57.408 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7260/api/delete application/json 50
+2023-10-21 21:33:57.412 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete'
+2023-10-21 21:33:57.414 +02:00 [DBG] Request matched endpoint 'HTTP: DELETE /api/delete'
+2023-10-21 21:33:57.416 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:33:57.418 +02:00 [INF] Executing endpoint 'HTTP: DELETE /api/delete'
+2023-10-21 21:33:57.489 +02:00 [DBG] Connection id "0HMUIDI6RC3VG", Request id "0HMUIDI6RC3VG:00000011": started reading request body.
+2023-10-21 21:33:57.491 +02:00 [DBG] Connection id "0HMUIDI6RC3VG", Request id "0HMUIDI6RC3VG:00000011": done reading request body.
+2023-10-21 21:34:05.035 +02:00 [INF] Executed endpoint 'HTTP: DELETE /api/delete'
+2023-10-21 21:34:05.037 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7260/api/delete application/json 50 - 400 - application/problem+json 7629.9008ms
+2023-10-21 21:34:56.357 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/api/delete?id=d202f02d-f990-4c6e-a3a0-34293a9ea406 - -
+2023-10-21 21:34:56.361 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete'
+2023-10-21 21:34:56.363 +02:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-10-21 21:34:56.365 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:34:56.366 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-10-21 21:34:56.367 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-10-21 21:34:56.369 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/api/delete?id=d202f02d-f990-4c6e-a3a0-34293a9ea406 - - - 405 0 - 11.5562ms
+2023-10-21 21:34:59.779 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/api/delete?id=d202f02d-f990-4c6e-a3a0-34293a9ea406 - -
+2023-10-21 21:34:59.782 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete'
+2023-10-21 21:34:59.784 +02:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2023-10-21 21:34:59.786 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:34:59.787 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2023-10-21 21:34:59.789 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2023-10-21 21:34:59.791 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/api/delete?id=d202f02d-f990-4c6e-a3a0-34293a9ea406 - - - 405 0 - 12.0468ms
+2023-10-21 21:36:08.598 +02:00 [DBG] Connection id "0HMUIDI6RC3VJ" accepted.
+2023-10-21 21:36:08.599 +02:00 [DBG] Connection id "0HMUIDI6RC3VJ" received FIN.
+2023-10-21 21:36:08.600 +02:00 [DBG] Connection id "0HMUIDI6RC3VJ" started.
+2023-10-21 21:36:08.602 +02:00 [DBG] Connection id "0HMUIDI6RC3VK" accepted.
+2023-10-21 21:36:08.611 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 21:36:08.612 +02:00 [DBG] Connection id "0HMUIDI6RC3VK" started.
+2023-10-21 21:36:08.630 +02:00 [DBG] Connection id "0HMUIDI6RC3VJ" stopped.
+2023-10-21 21:36:08.633 +02:00 [DBG] Connection id "0HMUIDI6RC3VJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:36:08.641 +02:00 [DBG] Connection 0HMUIDI6RC3VK established using the following protocol: "Tls13"
+2023-10-21 21:36:08.665 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7260/api/delete?id=d202f02d-f990-4c6e-a3a0-34293a9ea406 - -
+2023-10-21 21:36:08.667 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete'
+2023-10-21 21:36:08.669 +02:00 [DBG] Request matched endpoint 'HTTP: DELETE /api/delete'
+2023-10-21 21:36:08.671 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:36:08.672 +02:00 [INF] Executing endpoint 'HTTP: DELETE /api/delete'
+2023-10-21 21:44:29.629 +02:00 [INF] Registered 2 endpoints in 731 milliseconds.
+2023-10-21 21:44:29.792 +02:00 [INF] No validators found in the system!
+2023-10-21 21:44:29.825 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2023-10-21 21:44:29.848 +02:00 [DBG] Hosting starting
+2023-10-21 21:44:29.980 +02:00 [INF] Now listening on: https://localhost:7260
+2023-10-21 21:44:29.981 +02:00 [INF] Now listening on: http://localhost:5123
+2023-10-21 21:44:29.982 +02:00 [DBG] Loaded hosting startup assembly FastEndpointsDemo
+2023-10-21 21:44:29.983 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-21 21:44:29.984 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-21 21:44:29.985 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 21:44:29.985 +02:00 [INF] Hosting environment: Development
+2023-10-21 21:44:29.986 +02:00 [INF] Content root path: D:\MapperlyMappingTest\FastEndpointsDemo
+2023-10-21 21:44:29.989 +02:00 [DBG] Hosting started
+2023-10-21 21:44:30.005 +02:00 [DBG] Connection id "0HMUIDOI4HNCG" accepted.
+2023-10-21 21:44:30.007 +02:00 [DBG] Connection id "0HMUIDOI4HNCG" started.
+2023-10-21 21:44:30.013 +02:00 [DBG] Connection id "0HMUIDOI4HNCG" received FIN.
+2023-10-21 21:44:30.013 +02:00 [DBG] Connection id "0HMUIDOI4HNCH" received FIN.
+2023-10-21 21:44:30.017 +02:00 [DBG] Connection id "0HMUIDOI4HNCH" accepted.
+2023-10-21 21:44:30.018 +02:00 [DBG] Connection id "0HMUIDOI4HNCH" started.
+2023-10-21 21:44:30.024 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 21:44:30.024 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 21:44:30.048 +02:00 [DBG] Connection id "0HMUIDOI4HNCG" stopped.
+2023-10-21 21:44:30.048 +02:00 [DBG] Connection id "0HMUIDOI4HNCH" stopped.
+2023-10-21 21:44:30.053 +02:00 [DBG] Connection id "0HMUIDOI4HNCG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:44:30.053 +02:00 [DBG] Connection id "0HMUIDOI4HNCH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:44:30.307 +02:00 [DBG] Connection id "0HMUIDOI4HNCI" accepted.
+2023-10-21 21:44:30.311 +02:00 [DBG] Connection id "0HMUIDOI4HNCI" started.
+2023-10-21 21:44:30.389 +02:00 [DBG] Connection 0HMUIDOI4HNCI established using the following protocol: "Tls13"
+2023-10-21 21:44:30.557 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/Swagger - -
+2023-10-21 21:44:30.620 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 21:44:30.685 +02:00 [DBG] No candidates found for the request path '/Swagger'
+2023-10-21 21:44:30.686 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:44:30.705 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/Swagger - - - 302 0 - 154.1443ms
+2023-10-21 21:44:30.723 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - -
+2023-10-21 21:44:30.727 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 21:44:30.728 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:44:30.917 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-21 21:44:31.045 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-21 21:44:31.046 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:44:31.050 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - - - 200 - text/html;+charset=utf-8 326.5702ms
+2023-10-21 21:44:31.074 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 27.3429ms
+2023-10-21 21:44:31.120 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-21 21:44:31.178 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 57.8624ms
+2023-10-21 21:44:32.008 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - -
+2023-10-21 21:44:32.028 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 21:44:32.062 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:44:32.110 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-21 21:44:33.006 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 997.9711ms
+2023-10-21 21:44:33.655 +02:00 [DBG] Connection id "0HMUIDOI4HNCJ" accepted.
+2023-10-21 21:44:33.657 +02:00 [DBG] Connection id "0HMUIDOI4HNCJ" started.
+2023-10-21 21:44:33.662 +02:00 [DBG] Connection 0HMUIDOI4HNCJ established using the following protocol: "Tls13"
+2023-10-21 21:44:33.665 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-21 21:44:33.665 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:44:33.677 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 11.4759ms
+2023-10-21 21:44:33.684 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.9244ms
+2023-10-21 21:45:00.252 +02:00 [DBG] Connection id "0HMUIDOI4HNCK" accepted.
+2023-10-21 21:45:00.253 +02:00 [DBG] Connection id "0HMUIDOI4HNCK" received FIN.
+2023-10-21 21:45:00.256 +02:00 [DBG] Connection id "0HMUIDOI4HNCL" accepted.
+2023-10-21 21:45:00.255 +02:00 [DBG] Connection id "0HMUIDOI4HNCK" started.
+2023-10-21 21:45:00.266 +02:00 [DBG] Connection id "0HMUIDOI4HNCL" started.
+2023-10-21 21:45:00.268 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 21:45:00.271 +02:00 [DBG] Connection id "0HMUIDOI4HNCK" stopped.
+2023-10-21 21:45:00.272 +02:00 [DBG] Connection 0HMUIDOI4HNCL established using the following protocol: "Tls13"
+2023-10-21 21:45:00.273 +02:00 [DBG] Connection id "0HMUIDOI4HNCK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:45:00.281 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7260/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406 - -
+2023-10-21 21:45:00.286 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406'
+2023-10-21 21:45:00.290 +02:00 [DBG] Endpoint 'HTTP: DELETE /api/delete/{id}' with route pattern '/api/delete/{id}' is valid for the request path '/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406'
+2023-10-21 21:45:00.292 +02:00 [DBG] Request matched endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:45:00.293 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:45:00.294 +02:00 [INF] Executing endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:45:14.960 +02:00 [INF] Executed endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:45:14.962 +02:00 [DBG] Connection id "0HMUIDOI4HNCL" completed keep alive response.
+2023-10-21 21:45:14.964 +02:00 [INF] Request finished HTTP/1.1 DELETE https://localhost:7260/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406 - - - 400 - application/problem+json 14682.5289ms
+2023-10-21 21:45:23.844 +02:00 [INF] Request starting HTTP/1.1 DELETE https://localhost:7260/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406 - -
+2023-10-21 21:45:23.846 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406'
+2023-10-21 21:45:23.847 +02:00 [DBG] Endpoint 'HTTP: DELETE /api/delete/{id}' with route pattern '/api/delete/{id}' is valid for the request path '/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406'
+2023-10-21 21:45:23.848 +02:00 [DBG] Request matched endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:45:23.849 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:45:23.850 +02:00 [INF] Executing endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:46:15.209 +02:00 [INF] Registered 2 endpoints in 810 milliseconds.
+2023-10-21 21:46:15.370 +02:00 [INF] No validators found in the system!
+2023-10-21 21:46:15.416 +02:00 [DBG] Registered SignalR Protocol: json, implemented by Microsoft.AspNetCore.SignalR.Protocol.JsonHubProtocol.
+2023-10-21 21:46:15.445 +02:00 [DBG] Hosting starting
+2023-10-21 21:46:15.587 +02:00 [INF] Now listening on: https://localhost:7260
+2023-10-21 21:46:15.588 +02:00 [INF] Now listening on: http://localhost:5123
+2023-10-21 21:46:15.589 +02:00 [DBG] Loaded hosting startup assembly FastEndpointsDemo
+2023-10-21 21:46:15.590 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2023-10-21 21:46:15.590 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2023-10-21 21:46:15.591 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-21 21:46:15.592 +02:00 [INF] Hosting environment: Development
+2023-10-21 21:46:15.593 +02:00 [INF] Content root path: D:\MapperlyMappingTest\FastEndpointsDemo
+2023-10-21 21:46:15.595 +02:00 [DBG] Hosting started
+2023-10-21 21:46:15.915 +02:00 [DBG] Connection id "0HMUIDPHMIUGB" accepted.
+2023-10-21 21:46:15.915 +02:00 [DBG] Connection id "0HMUIDPHMIUGC" accepted.
+2023-10-21 21:46:15.921 +02:00 [DBG] Connection id "0HMUIDPHMIUGB" started.
+2023-10-21 21:46:15.922 +02:00 [DBG] Connection id "0HMUIDPHMIUGC" started.
+2023-10-21 21:46:15.933 +02:00 [DBG] Connection id "0HMUIDPHMIUGB" received FIN.
+2023-10-21 21:46:15.933 +02:00 [DBG] Connection id "0HMUIDPHMIUGC" received FIN.
+2023-10-21 21:46:15.941 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 21:46:15.941 +02:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2023-10-21 21:46:15.967 +02:00 [DBG] Connection id "0HMUIDPHMIUGB" stopped.
+2023-10-21 21:46:15.967 +02:00 [DBG] Connection id "0HMUIDPHMIUGC" stopped.
+2023-10-21 21:46:15.973 +02:00 [DBG] Connection id "0HMUIDPHMIUGC" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:46:15.973 +02:00 [DBG] Connection id "0HMUIDPHMIUGB" sending FIN because: "The Socket transport's send loop completed gracefully."
+2023-10-21 21:46:16.230 +02:00 [DBG] Connection id "0HMUIDPHMIUGD" accepted.
+2023-10-21 21:46:16.254 +02:00 [DBG] Connection id "0HMUIDPHMIUGD" started.
+2023-10-21 21:46:16.310 +02:00 [DBG] Connection 0HMUIDPHMIUGD established using the following protocol: "Tls13"
+2023-10-21 21:46:16.411 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/Swagger - -
+2023-10-21 21:46:16.450 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2023-10-21 21:46:16.528 +02:00 [DBG] No candidates found for the request path '/Swagger'
+2023-10-21 21:46:16.529 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:46:16.546 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/Swagger - - - 302 0 - 137.5344ms
+2023-10-21 21:46:16.564 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/index.html - -
+2023-10-21 21:46:16.566 +02:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2023-10-21 21:46:16.567 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:46:16.748 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2023-10-21 21:46:16.849 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2023-10-21 21:46:16.852 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/index.html - - - 200 - text/html;+charset=utf-8 287.7766ms
+2023-10-21 21:46:16.863 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:46:16.884 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 20.4385ms
+2023-10-21 21:46:16.937 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-21 21:46:16.980 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 42.1092ms
+2023-10-21 21:46:17.132 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - -
+2023-10-21 21:46:17.134 +02:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2023-10-21 21:46:17.136 +02:00 [DBG] Request did not match any endpoints
+2023-10-21 21:46:17.162 +02:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2023-10-21 21:46:17.821 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/swagger/v1/swagger.json - - - 200 - application/json;+charset=utf-8 688.5749ms
+2023-10-21 21:46:18.424 +02:00 [DBG] Connection id "0HMUIDPHMIUGE" accepted.
+2023-10-21 21:46:18.427 +02:00 [DBG] Connection id "0HMUIDPHMIUGE" started.
+2023-10-21 21:46:18.432 +02:00 [DBG] Connection 0HMUIDPHMIUGE established using the following protocol: "Tls13"
+2023-10-21 21:46:18.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_vs/browserLink - -
+2023-10-21 21:46:18.434 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - -
+2023-10-21 21:46:18.437 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 3.0602ms
+2023-10-21 21:46:18.450 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7260/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.3657ms
+2023-10-21 21:46:36.600 +02:00 [INF] Request starting HTTP/2 DELETE https://localhost:7260/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406 - -
+2023-10-21 21:46:36.606 +02:00 [DBG] 1 candidate(s) found for the request path '/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406'
+2023-10-21 21:46:36.611 +02:00 [DBG] Endpoint 'HTTP: DELETE /api/delete/{id}' with route pattern '/api/delete/{id}' is valid for the request path '/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406'
+2023-10-21 21:46:36.613 +02:00 [DBG] Request matched endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:46:36.615 +02:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2023-10-21 21:46:36.617 +02:00 [INF] Executing endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:47:09.127 +02:00 [INF] Setting HTTP status code 200.
+2023-10-21 21:47:09.129 +02:00 [INF] Writing value of type 'DeleteResponseDto' as Json.
+2023-10-21 21:47:09.168 +02:00 [INF] Executed endpoint 'HTTP: DELETE /api/delete/{id}'
+2023-10-21 21:47:09.172 +02:00 [INF] Request finished HTTP/2 DELETE https://localhost:7260/api/delete/d202f02d-f990-4c6e-a3a0-34293a9ea406 - - - 200 - application/json;+charset=utf-8 32571.5610ms
