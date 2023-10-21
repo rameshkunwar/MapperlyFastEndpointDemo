@@ -10,10 +10,12 @@ namespace FastEndpointsDemo.Endpoints
     public class Create : Endpoint<BegivenhederDto, Results<Ok<BegivenhederDto>, NotFound, ProblemDetails>>
     {
         private readonly IHubContext<OrderHub> _messageHubContext;
+        private readonly ILogger<Create> _logger;
 
-        public Create(IHubContext<OrderHub> messageHubContext)
+        public Create(IHubContext<OrderHub> messageHubContext, ILogger<Create> logger)
         {
             _messageHubContext = messageHubContext;
+            _logger = logger;
         }
         public override void Configure()
         {
@@ -41,6 +43,9 @@ namespace FastEndpointsDemo.Endpoints
             MapperlyTestForMapping.Models.Begivenheder? toEntity = BegivenhederMapper.ToBegivenheder(req);
 
             BegivenhederDto begivenhederDto = BegivenhederMapper.ToBegivenhederDto(toEntity);
+
+            _logger.LogInformation("Created begivenheder: ");
+            _logger.LogWarning("{@toEntity}", toEntity);
 
             await _messageHubContext.Clients.All.SendAsync("PushBegivenhederToClients", begivenhederDto, ct);
 

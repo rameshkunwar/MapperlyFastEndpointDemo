@@ -2,6 +2,7 @@ using FastEndpoints;
 using FastEndpoints.Swagger;
 using FastEndpointsDemo.Endpoints;
 using FastEndpointsDemo.SignalR;
+using Serilog;
 using System.Text.Json.Serialization;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -27,6 +28,20 @@ builder.Services.SwaggerDocument(o =>
 
 builder.Services.AddSignalR();
 builder.Services.AddTransient<Create>();
+
+IConfigurationRoot configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile(path: "appsettings.json", optional: false, reloadOnChange: true)
+    .Build();
+
+Log.Logger = new LoggerConfiguration()
+                        .ReadFrom.Configuration(configuration)
+                        .CreateLogger();
+
+builder.Host.UseSerilog();
+builder.Services.AddSingleton(Log.Logger);
+
+
 
 WebApplication app = builder.Build();
 
